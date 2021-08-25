@@ -1,0 +1,15 @@
+<html>
+	<body>
+		<ul id = "list">
+		</ul>
+		<script>
+			var n = prompt("How many list items do you want?", 10)
+			var ul = document.getElementById("list")
+			for(var i = 0; i < n; i++){
+				var li = document.createElement("li")
+				li.innerHTML = "item " + (i + 1)
+				ul.appendChild(li)
+			}
+		</script>
+	</body>
+</html>
